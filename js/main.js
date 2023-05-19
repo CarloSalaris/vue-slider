@@ -10,6 +10,7 @@ const{createApp} = Vue
 createApp({
     data(){
         return {
+            hover: false,
             activePosition: 2,
             games: [
                 {
@@ -58,7 +59,9 @@ createApp({
         }
     },
     mounted() {
-        setInterval(this.buttonDownFunc, 3000);
+        if (this.hover === false) {
+            setInterval(this.buttonDownFunc, 3000);
+        };
         console.log("ho caricato l'app");
     }
 }).mount("#app")
