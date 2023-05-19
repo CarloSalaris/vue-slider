@@ -6,7 +6,7 @@ createApp({
     data(){
         return {
             activePosition: 2,
-            movies: [
+            games: [
                 {
                     image: 'img/01.webp',
                     title: 'Marvel\'s Spiderman Miles Morales',
@@ -32,8 +32,14 @@ createApp({
         }
     },
     methods: {
-        methodName() {
-            //code
+        buttonDownFunc() {
+            if (this.activePosition === this.games.length - 1) {
+                //reset activePosition
+                this.activePosition = 0;        
+            } else {
+                //incrementare il valore di activePosition
+                this.activePosition++;
+            }
         }
     },
     mounted() {

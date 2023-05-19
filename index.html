@@ -22,10 +22,10 @@
                 <!-- Big image preview carousel -->
                 <div id="itemContainer">
                     <div class="item">
-                        <img :src="movies[activePosition].image" alt="image">
+                        <img :src="games[activePosition].image" alt="image">
                         <div class="overImg">
-                            <div class="imgInfo imgTitle">{{movies[activePosition].title}}</div>
-                            <div class="imgInfo">{{movies[activePosition].text}}</div>
+                            <div class="imgInfo imgTitle">{{games[activePosition].title}}</div>
+                            <div class="imgInfo">{{games[activePosition].text}}</div>
                         </div>
                     </div>
                 </div>
@@ -33,15 +33,15 @@
                 <div id="thumbnailSlide">
         
                     <div id="thumbnailContainer">
-                        <div v-for="(movie, index) in movies" class="thumbnail">
-                            <img :src="movies[index].image" alt="image">
+                        <div v-for="(movie, index) in games" :class="activePosition === index ? 'thumbActive':''" class="thumbnail">
+                            <img :src="games[index].image" alt="image">
                         </div>
                     </div>
                     <!-- BUTTONS -->
                     <button id="buttonUp">
                         <i class="fa-solid fa-arrow-up"></i>
                     </button>
-                    <button id="buttonDown">
+                    <button id="buttonDown" @click="buttonDownFunc">
                         <i class="fa-solid fa-arrow-down"></i>
                     </button>
                 </div>
