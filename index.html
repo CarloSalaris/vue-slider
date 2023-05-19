@@ -32,8 +32,8 @@
                 <!-- Thumbnail slide -->
                 <div id="thumbnailSlide">       
                     <div id="thumbnailContainer">
-                        <div v-for="(movie, index) in games" :class="activePosition === index ? 'thumbActive':''" class="thumbnail" @click="activePosition = index">
-                            <img :src="games[index].image" alt="image">
+                        <div v-for="(game, index) in games" :class="activePosition === index ? 'thumbActive':''" class="thumbnail" @click="activePosition = index">
+                            <img :src="game.image" alt="image">
                         </div>
                     </div>
                     <!-- BUTTONS -->
