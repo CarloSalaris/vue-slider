@@ -23,7 +23,7 @@
                 <div id="itemContainer">
                     <div class="item">
                         <img :src="games[activePosition].image" alt="image">
-                        <div class="overImg">
+                        <div v-if="hover === true" class="overImg">
                             <div class="imgInfo imgTitle">{{games[activePosition].title}}</div>
                             <div class="imgInfo">{{games[activePosition].text}}</div>
                         </div>

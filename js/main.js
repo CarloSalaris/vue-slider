@@ -10,7 +10,8 @@ const{createApp} = Vue
 createApp({
     data(){
         return {
-            clockDown: '',
+            hover: false,
+            clockDown: null,
             activePosition: 2,
             games: [
                 {
@@ -59,9 +60,11 @@ createApp({
         },
         autoPlay() {
             this.clockDown = setInterval(this.buttonDownFunc, 3000);
+            this.hover = false;
         },
         stopAutoPlay() {
             clearInterval (this.clockDown);
+            this.hover = true;
         }
     },
     mounted() {
