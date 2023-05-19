@@ -58,7 +58,7 @@ createApp({
         }
     },
     mounted() {
-	  //code
+        setInterval(this.buttonDownFunc, 3000);
         console.log("ho caricato l'app");
     }
 }).mount("#app")
