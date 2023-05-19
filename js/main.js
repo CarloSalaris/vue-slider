@@ -40,6 +40,16 @@ createApp({
                 //incrementare il valore di activePosition
                 this.activePosition++;
             }
+        },
+        buttonUpFunc() {
+            if (this.activePosition === 0) {
+                //reset activePosition
+                this.activePosition = this.games.length - 1;
+                
+            } else {
+                //incrementare il valore di activePosition
+                this.activePosition--;
+            }
         }
     },
     mounted() {
