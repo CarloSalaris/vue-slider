@@ -23,6 +23,10 @@
                 <div id="itemContainer">
                     <div class="item">
                         <img :src="movies[activePosition].image" alt="image">
+                        <div class="overImg">
+                            <div class="imgInfo imgTitle">{{movies[activePosition].title}}</div>
+                            <div class="imgInfo">{{movies[activePosition].text}}</div>
+                        </div>
                     </div>
                 </div>
                 <!-- Thumbnail slide -->
