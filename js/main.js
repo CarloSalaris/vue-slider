@@ -11,7 +11,6 @@ createApp({
     data(){
         return {
             clockDown: '',
-            hover: false,
             activePosition: 2,
             games: [
                 {
