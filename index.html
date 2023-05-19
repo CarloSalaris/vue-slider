@@ -18,7 +18,7 @@
     
     <div id="app">
         <div id="container">
-            <div id="slide" @mouseover="hover = true" @mouseleave="hover = false">
+            <div id="slide" @mouseover="stopAutoPlay" @mouseleave="autoPlay">
                 <!-- Big image preview carousel -->
                 <div id="itemContainer">
                     <div class="item">
