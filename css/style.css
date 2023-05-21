@@ -33,9 +33,9 @@ img {
 
 /* Carousel */
 #container #slide {
-    height: 350px;
+    height: 600px;
     width: 80%;
-    max-width: 1000px;
+    max-width: 1350px;
     display: flex;
     justify-content: center;
     align-items: center;
