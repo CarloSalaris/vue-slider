@@ -12,7 +12,7 @@ createApp({
         return {
             hover: false,
             clockDown: null,
-            activePosition: 2,
+            activePosition: 0,
             games: [
                 {
                     image: 'img/01.webp',
