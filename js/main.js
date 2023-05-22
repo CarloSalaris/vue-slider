@@ -40,8 +40,6 @@ createApp({
     },
     methods: {
         buttonDownFunc() {
-            this.stopAutoPlay();
-            
             if (this.activePosition === this.games.length - 1) {
                 //reset activePosition
                 this.activePosition = 0;        
@@ -52,8 +50,6 @@ createApp({
             
         },
         buttonUpFunc() {
-            this.stopAutoPlay();
-            
             if (this.activePosition === 0) {
                 //reset activePosition
                 this.activePosition = this.games.length - 1;
