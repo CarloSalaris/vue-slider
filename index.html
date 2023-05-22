@@ -48,10 +48,10 @@
                         </div>
                     </div>
                     <!-- BUTTONS -->
-                    <button id="buttonUp" @click="buttonUpFunc">
+                    <button id="buttonUp" @click="buttonUpFunc" @keydown.up="buttonUpFunc" @keydown.down="buttonDownFunc">
                         <i class="fa-solid fa-arrow-up"></i>
                     </button>
-                    <button id="buttonDown" @click="buttonDownFunc">
+                    <button id="buttonDown" @click="buttonDownFunc" @keydown.up="buttonUpFunc" @keydown.down="buttonDownFunc">
                         <i class="fa-solid fa-arrow-down"></i>
                     </button>
                 </div>

@@ -47,6 +47,7 @@ createApp({
                 //incrementare il valore di activePosition
                 this.activePosition++;
             }
+            this.stopAutoPlay;
         },
         buttonUpFunc() {
             if (this.activePosition === 0) {
@@ -57,6 +58,7 @@ createApp({
                 //incrementare il valore di activePosition
                 this.activePosition--;
             }
+            this.stopAutoPlay;
         },
         autoPlay() {
             this.clockDown = setInterval(this.buttonDownFunc, 3000);
