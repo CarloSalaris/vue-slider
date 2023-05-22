@@ -65,7 +65,10 @@ createApp({
         stopAutoPlay() {
             clearInterval (this.clockDown);
             this.hover = true;
-        }
+        },
+		showSelected(value) {
+			this.activePosition = value;
+		}
     },
     mounted() {
         this.autoPlay();
