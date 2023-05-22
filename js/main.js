@@ -66,7 +66,7 @@ createApp({
             clearInterval (this.clockDown);
             this.hover = true;
         },
-		showSelected(value) {
+		showSelectedFunc(value) {
 			this.activePosition = value;
 		}
     },
