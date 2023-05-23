@@ -24,7 +24,12 @@
     <div id="app">
 
         <div id="container">
-            <div id="slide" @mouseover="stopAutoPlay" @mouseleave="autoPlay">
+            <div id="slide"
+                @mouseover="stopAutoPlay"
+                @mouseleave="autoPlay"
+                tabindex="0"
+                @keydown.up="buttonUpFunc"
+                @keydown.down="buttonDownFunc">
 
                 <!-- Big image preview carousel -->
                 <div id="itemContainer">
@@ -48,10 +53,10 @@
                         </div>
                     </div>
                     <!-- BUTTONS -->
-                    <button id="buttonUp" @click="buttonUpFunc" @keydown.up="buttonUpFunc" @keydown.down="buttonDownFunc">
+                    <button id="buttonUp" @click="buttonUpFunc">
                         <i class="fa-solid fa-arrow-up"></i>
                     </button>
-                    <button id="buttonDown" @click="buttonDownFunc" @keydown.up="buttonUpFunc" @keydown.down="buttonDownFunc">
+                    <button id="buttonDown" @click="buttonDownFunc">
                         <i class="fa-solid fa-arrow-down"></i>
                     </button>
                 </div>
